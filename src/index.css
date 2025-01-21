@@ -1,0 +1,94 @@
+:root {
+  --background-color: #161616;
+  --text-color: #fff;
+  --primary-color: #D8D5D1;
+  /* Light color */
+  --secondary-color: #7D7A77;
+  --fainted-color: #3D3D3D45;
+  /* Darker grayish color */
+  --accent-color: #05FA6F;
+  /* Accent color (bright green) */
+  --font-family: "Lufga", Arial, sans-serif;
+  --gradient-background: linear-gradient(135deg, #9FFDC3, #60FC9B, #05FA6F, #05D75C);
+  /* Gradient Variable */
+
+
+
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  font-family: var(--font-family);
+
+  /* Fixed Background Image */
+  background-image: url("../src/assets/Hero/bgg.png");
+  /* Adjust the path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* Keeps the background fixed while content scrolls */
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+button {
+  background-color: var(--accent-color);
+  /* Accent color for button background */
+  color: var(--background-color);
+  /* Dark text on button */
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: var(--font-family);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+  /* Light color for hover effect */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  /* width: 100%; */
+  border:0.7px solid var(--secondary-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: var(--accent-color);
+  /* Accent color on focus */
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--secondary-color);
+  /* Placeholder text color */
+}
+
+input[type="text"]:disabled,
+input[type="email"]:disabled,
+textarea:disabled {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  cursor: not-allowed;
+}

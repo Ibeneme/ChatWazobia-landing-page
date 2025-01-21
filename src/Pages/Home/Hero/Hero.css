@@ -1,0 +1,222 @@
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../../assets/Hero/Herobg.png");
+    /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 6rem;
+    padding-bottom: 12rem;
+    overflow: hidden;
+}
+
+.hero-content-span {
+    background: var(--gradient-background);
+    /* Applying the gradient */
+    -webkit-background-clip: text;
+    /* Necessary for gradient text */
+    background-clip: text;
+    /* Background clip for non-webkit browsers */
+    color: transparent;
+    font-family: var(--font-family);
+}
+
+.hero-content {
+    max-width: 800px;
+    z-index: 2;
+    padding: 0 6rem
+}
+
+.hero-content h1 {
+    font-size: 4.48rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    color: var(--primary-color);
+}
+
+.hero-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+    max-width: 600px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text-input {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.email-input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    flex: 1;
+    background-color: var(--fainted-color);
+    padding-left: 2em;
+    backdrop-filter: blur(41.30px);
+    /* This adds the blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* For Safari */
+}
+
+.join-btn {
+    padding: 1.093rem 1.8rem;
+    font-size: 1.2rem;
+    color: #fff;
+    border: none;
+    border-radius: 48px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 12px
+}
+
+
+
+.terms {
+    font-size: 0.9rem;
+}
+
+.terms-link {
+    background: var(--gradient-background);
+    /* Applying the gradient */
+    -webkit-background-clip: text;
+    /* Necessary for gradient text */
+    background-clip: text;
+    /* Background clip for non-webkit browsers */
+    color: transparent;
+    font-family: var(--font-family);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.terms-link:hover {
+    text-decoration: underline;
+}
+
+.hero-image {
+    position: absolute;
+    right: -650px;
+    max-width: 1200px;
+    z-index: 2;
+    bottom: 320px;
+}
+
+@media (max-width: 1024px) {
+    .hero {
+
+        padding: 32px 0px;
+        overflow: hidden;
+        padding-top: 6rem;
+        padding-bottom: 12rem
+    }
+
+
+    .hero-image {
+        right: -840px;
+    }
+
+    .hero-content {
+        max-width: 600px;
+        z-index: 2;
+        padding: 0 32px;
+    }
+
+    .hero-content h1 {
+        font-size: 3.48rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        line-height: 1.3;
+        color: var(--primary-color);
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        color: var(--secondary-color);
+    }
+
+
+
+}
+
+@media (max-width: 700px) {
+    .hero {
+
+        padding-top: 24px;
+
+    }
+
+    .hero-image {
+        right: -900px;
+        bottom: -500px;
+
+    }
+
+    .hero-content {
+        max-width: 94vw;
+        align-self: center;
+        /* background-color: aqua; */
+    }
+
+    .hero-content h1 {
+
+        font-size: 2.48rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        line-height: 1.3;
+        color: var(--primary-color);
+    }
+
+    .input-section {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .text-input {
+        display: flex;
+        gap: 0.5rem;
+        flex-direction: column;
+        gap: 16px;
+
+    }
+
+    .email-input {
+        padding: 1.2rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 48px;
+        flex: 1;
+        background-color: var(--fainted-color);
+        padding-left: 2em;
+        backdrop-filter: blur(41.30px);
+        /* This adds the blur effect */
+        -webkit-backdrop-filter: blur(10px);
+
+        /* For Safari */
+    }
+
+
+
+}
