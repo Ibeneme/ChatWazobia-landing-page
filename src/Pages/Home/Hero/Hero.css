@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 4rem;
+    padding-top: 6rem;
     padding-bottom: 12rem;
     overflow: hidden;
 }
@@ -162,7 +162,7 @@
 @media (max-width: 700px) {
     .hero {
 
-        padding-top: 24px;
+        padding-top: 90px;
 
     }
 
