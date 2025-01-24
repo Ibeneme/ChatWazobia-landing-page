@@ -1,0 +1,127 @@
+.footer {
+    padding: 48px;
+    background-color: #ffffff12;
+}
+
+@media (max-width:726px) {
+
+    .footer {
+        padding: 48px 16px;
+        background-color: #ffffff12;
+    }
+
+    .footer-bottom {
+
+        color: var(--secondary-color);
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 120px
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+
+        gap: 48px
+    }
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-logo-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.footer-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer-name {
+    font-size: 1.48rem;
+    font-weight: bold;
+    line-height: 1.3;
+    color: var(--primary-color);
+    max-width: 500px;
+}
+
+.footer-description {
+    font-size: 0.81rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+    max-width: 500px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    background-color: #ffffff21;
+    padding: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: var(--secondary-color);
+}
+
+.social-icon:hover {
+    background-color: #ffffff40;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    color: var(--secondary-color);
+
+}
+
+.footer-link {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.81rem;
+}
+
+.footer-bottom {
+    margin-top: 24px;
+    border-top: 1px solid #ffffff21;
+    padding-top: 16px;
+    text-align: center;
+    font-size: 0.71rem;
+    color: var(--secondary-color);
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.footer-bottom-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.71rem;
+    color: var(--secondary-color);
+}
+
+.footer-bottom-link:hover {
+    text-decoration: none;
+    color: #cccccc;
+}

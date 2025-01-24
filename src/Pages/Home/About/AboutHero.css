@@ -1,0 +1,45 @@
+.about-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    padding-top: 160px;
+    flex-direction: column;
+
+}
+
+.about-hero-content {
+    max-width: 1200px;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-hero-header {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--primary-color, #333333);
+    margin-bottom: 16px;
+    max-width: 600px;
+}
+
+.about-hero-description {
+    font-size: 1.09;
+    color: var(--secondary-color, #555555);
+    margin-bottom: -22px;
+}
+
+.about-hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-image {
+    width: 600px;
+    height: 800px;
+}

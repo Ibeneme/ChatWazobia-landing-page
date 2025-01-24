@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+ 
     
 }
 
@@ -31,7 +31,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    width: 100%;
+
 }
 
 .text-content h1 {
@@ -129,7 +129,7 @@
 @media (max-width: 1224px) {
     .first-section {
         padding: 24px;
-        width: 92%;
+
         align-self: center;
     }
 

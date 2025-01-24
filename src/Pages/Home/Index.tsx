@@ -1,22 +1,32 @@
-import Navbar from "../../Components/Navbar/Navbar";
 import Hero from "./Hero/Hero";
-import logoSrc from "../../assets/Logo/Layer_x0020_1.png";
 import FirstSection from "./Section/FirstSection/FirstSection";
 import SecondSection from "./Section/SecondSection/SecondSection";
 import ThirdSection from "./Section/ThirdSection/ThirdSection";
 import FourthSection from "./Section/FourthSection/FourthSection";
 import CommentSection from "./Section/CommentSection/CommentSection";
+import FifthSection from "./Section/FifthSection/FifthSection";
+import FAQPage from "../Faqs/FAQPage";
+import SixthSection from "./Section/SixSection/SixthSection";
+
 
 const Index = () => {
   return (
     <div style={{ padding: 0 }}>
-      <Navbar logoSrc={logoSrc} />
       <Hero />
+      {/* <FirstSection />
+      <SecondSection />
+      <div style={{ padding: 0 }}>
+        <ThirdSection />
+      </div> */}
+      {/* <FirstSection /> */}
       <FirstSection />
       <SecondSection />
       <ThirdSection />
-      <FourthSection />
+      <FourthSection /> {/* <CommentSection /> */}
+      <FifthSection />
       <CommentSection />
+      <FAQPage />
+      <SixthSection />
     </div>
   );
 };

@@ -1,0 +1,80 @@
+.sixth-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.sixth-section-image-img {
+    border-radius: 12px;
+    width: 100px;
+    height: 100px;
+}
+
+.sixth-section-content {
+
+    text-align: left;
+}
+
+.sixth-section-content-h1 {
+    font-size: 2.48rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    line-height: 1.3;
+    color: #000;
+}
+
+.sixth-section-content-p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #000;
+}
+
+.subscribe-button {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+    background-color: darken(#000, 10%);
+}
+
+/* Mobile Responsiveness: Flex Items in Column */
+@media (max-width: 768px) {
+    .sixth-section {
+        flex-direction: column;
+        /* Change flex direction to column on mobile */
+        padding: 15px;
+    }
+
+    .sixth-section-image,
+    .sixth-section-content {
+        max-width: 100%;
+        flex: none;
+        text-align: center;
+    }
+
+    .sixth-section-content-h1 {
+        font-size: 2rem;
+        /* Smaller font size on mobile */
+    }
+
+    .sixth-section-content-p {
+        font-size: 1rem;
+        /* Smaller text for mobile */
+    }
+
+    .subscribe-button {
+        width: 100%;
+        padding: 14px 0;
+        /* Full-width button on mobile */
+    }
+}

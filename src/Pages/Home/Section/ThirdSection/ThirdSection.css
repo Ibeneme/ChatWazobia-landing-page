@@ -2,7 +2,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 4rem 16px;
+    padding: 4rem 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@
     position: relative;
     min-height: auto;
     border-radius: 48px;
-    padding: 2rem 2rem;
+    /* padding: 2rem 2rem; */
 
 }
 
@@ -29,7 +29,7 @@
     padding: 2rem;
     border-radius: 12px;
     max-width: 900px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 
@@ -101,11 +101,11 @@
     }
 
     .third-section {
-        padding: 120px 12px
+        padding: 23px 24px
     }
 
     .third-section-div {
-        padding: 12px;
+        padding: 0px;
         padding-top: 12px
     }
 

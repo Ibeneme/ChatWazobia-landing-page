@@ -1,0 +1,40 @@
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background-color: var(--accent-color);
+    border-radius: 12px;
+
+    margin: 0 auto;
+    margin-bottom: 48px
+}
+
+.contact-us-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: -4px;
+}
+
+.contact-us-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #222;
+    text-align: center;
+    max-width: 800px;
+
+}
+
+.contact-us-button {
+    padding: 16px 64px;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    background-color: #000;
+    border: none;
+    border-radius: 244px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

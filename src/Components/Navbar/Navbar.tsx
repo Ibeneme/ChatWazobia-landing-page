@@ -6,9 +6,10 @@ import BurgerIcon from "../Icons/BurgerIcon"; // Assume this is an SVG or icon c
 
 interface NavbarProps {
   logoSrc: string; // Logo image source
+  openModal: () => void; // Add the openModal function prop
 }
 
-const Navbar: React.FC<NavbarProps> = ({ logoSrc }) => {
+const Navbar: React.FC<NavbarProps> = ({ logoSrc, openModal }) => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage the dropdown menu visibility
 
@@ -32,12 +33,6 @@ const Navbar: React.FC<NavbarProps> = ({ logoSrc }) => {
         <Link to="/about" className={`nav-link ${getNavLinkClass("/about")}`}>
           About
         </Link>
-        <Link
-          to="/features"
-          className={`nav-link ${getNavLinkClass("/features")}`}
-        >
-          Features
-        </Link>
         <Link to="/faqs" className={`nav-link ${getNavLinkClass("/faqs")}`}>
           FAQs
         </Link>
@@ -45,7 +40,7 @@ const Navbar: React.FC<NavbarProps> = ({ logoSrc }) => {
 
       {/* Right Section: Join Waitlist Button */}
       <div className="navbar-right">
-        <button className="join-button">
+        <button className="join-button" onClick={openModal}>
           <VerifiedIcon width={24} height={24} />
           Join Our Waitlist
         </button>
@@ -72,13 +67,6 @@ const Navbar: React.FC<NavbarProps> = ({ logoSrc }) => {
             onClick={() => setIsMenuOpen(false)}
           >
             About
-          </Link>
-          <Link
-            to="/features"
-            className={`dropdown-link ${getNavLinkClass("/features")}`}
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Features
           </Link>
           <Link
             to="/faqs"
