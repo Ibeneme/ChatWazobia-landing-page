@@ -28,6 +28,7 @@
     border-radius: 12px;
     color: #333;
     line-height: 1.6;
+
 }
 
 h2 {
@@ -51,4 +52,16 @@ p {
     h2 {
         font-size: 1.3rem;
     }
+
+    .privacy-policy {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0px;
+        border-radius: 12px;
+        color: #333;
+        line-height: 1.6;
+        margin: 140px 0px;
+    }
+    
 }

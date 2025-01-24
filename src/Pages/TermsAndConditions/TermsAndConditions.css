@@ -62,4 +62,15 @@ p {
     h3 {
         font-size: 1.1rem;
     }
+
+    .terms-and-conditions {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0px;
+        border-radius: 12px;
+        color: #333;
+        line-height: 1.6;
+        margin: 140px 0px;
+    }
 }
