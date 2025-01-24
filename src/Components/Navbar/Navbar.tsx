@@ -36,6 +36,16 @@ const Navbar: React.FC<NavbarProps> = ({ logoSrc, openModal }) => {
         <Link to="/faqs" className={`nav-link ${getNavLinkClass("/faqs")}`}>
           FAQs
         </Link>
+        {/* Added Terms and Conditions and Privacy Policy Links */}
+        <Link to="/terms" className={`nav-link ${getNavLinkClass("/terms")}`}>
+          T & C
+        </Link>
+        <Link
+          to="/privacy-policy"
+          className={`nav-link ${getNavLinkClass("/privacy-policy")}`}
+        >
+          Privacy Policy
+        </Link>
       </div>
 
       {/* Right Section: Join Waitlist Button */}
@@ -74,6 +84,21 @@ const Navbar: React.FC<NavbarProps> = ({ logoSrc, openModal }) => {
             onClick={() => setIsMenuOpen(false)}
           >
             FAQs
+          </Link>
+          {/* Added Dropdown Links for Terms and Privacy */}
+          <Link
+            to="/terms"
+            className={`dropdown-link ${getNavLinkClass("/terms")}`}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Terms & Conditions
+          </Link>
+          <Link
+            to="/privacy-policy"
+            className={`dropdown-link ${getNavLinkClass("/privacy-policy")}`}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Privacy Policy
           </Link>
         </div>
       )}

@@ -11,6 +11,7 @@ import { AboutIndex } from "./Pages/Home/About/AboutIndex";
 import TermsAndConditions from "./Pages/TermsAndConditions/TermsAndConditions";
 import WaitlistModal from "./Components/WaitlistModal/WaitlistModal";
 import { useState } from "react";
+import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -70,6 +71,16 @@ function App() {
               <Navbar logoSrc={logoSrc} openModal={openModal} />{" "}
               {/* Pass openModal function */}
               <TermsAndConditions /> <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/privacy-policy"
+          element={
+            <>
+              <Navbar logoSrc={logoSrc} openModal={openModal} />{" "}
+              {/* Pass openModal function */}
+              <PrivacyPolicy /> <Footer />
             </>
           }
         />
