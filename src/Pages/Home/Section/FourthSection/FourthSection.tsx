@@ -3,7 +3,11 @@ import backgroundImage from "../../../../assets/FourthSection/background.png";
 import logoImage from "../../../../assets/FourthSection/logo.png";
 import aiImage from "../../../../assets/FourthSection/ai-image.png";
 
+import { useNavigate } from "react-router-dom";
+import PlayIcon from "../../../../Components/Icons/PlayIcon";
+
 const FourthSection = () => {
+  const navigate = useNavigate()
   return (
     <div
       // style={{ alignSelf: "center", width: "100%", display: "flex" }}
@@ -25,6 +29,11 @@ const FourthSection = () => {
               into traditional storytelling and language learning, connecting
               fun with cultural appreciation.
             </p>
+
+            <button className="join-btn" style={{ maxWidth: 370 }} onClick={() => navigate("/ayo")}>
+              <PlayIcon />
+      Play Ayo Game - Demo
+    </button>
           </div>
 
           {/* Right Side: AI Image */}

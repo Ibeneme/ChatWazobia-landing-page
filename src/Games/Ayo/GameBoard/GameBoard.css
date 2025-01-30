@@ -1,0 +1,181 @@
+.game-board-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.player-turn {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.player-turn-h1 {
+    color: var(--accent-color);
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.game-row {
+    display: flex;
+    flex-direction: row;
+    background-color: #d4a373;
+    padding: 12px;
+    border-radius: 1000px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.game-media {
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
+
+@media (max-width: 768px) {
+
+    .game-media {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .game-row {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .system-hole {
+        width: 64px;
+        height: 64px;
+    }
+
+    .hole {
+        width: 64px;
+        height: 64px;
+    }
+
+}
+
+
+.system-hole {
+
+
+    width: 96px;
+    height: 96px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.4),
+        inset 0px -4px 6px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s;
+
+
+}
+
+.hole {
+
+
+    width: 96px;
+    height: 96px;
+    background-color: #795548;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.4),
+        inset 0px -4px 6px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s;
+
+
+}
+
+.score-board {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.hole:hover {
+    background-color: #bbb;
+}
+
+.active-hole {
+    background-color: #f44336;
+    /* Red for active hole */
+}
+
+.hole-number {
+    font-size: 0.75rem;
+}
+
+.seeds {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    justify-content: center;
+    align-content: center;
+    font-size: 0.55rem;
+}
+
+
+
+
+.player-turn {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.system-hole.active-hole {
+    background-color: red !important;
+    color: white;
+}
+
+
+.hole.active-hole {
+    background-color: red !important;
+    color: white;
+}
+
+
+
+/* System's holes will have a purple background, but active hole still red */
+.hole[style*="background-color: purple"] {
+    background-color: purple;
+    /* Set purple for system's holes */
+}
+
+/* Hover effects to indicate interactiveness */
+.hole:hover {
+    opacity: 0.8;
+}

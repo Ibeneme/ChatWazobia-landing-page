@@ -1,7 +1,7 @@
 import React from "react";
 import "./FifthSection.css";
 import logo from "../../../../assets/FifthSection/logo.png"; // Assuming the logo is placed in this path
-
+import image from '../../../../assets/Hero/Loadingdetails.png'
 const FifthSection: React.FC = () => {
   return (
     <section className="fifth-section">
@@ -32,6 +32,12 @@ const FifthSection: React.FC = () => {
           </p>
         </div>
       </div>
+ 
+
+      <div className="content-container">
+      <img src={image} alt="image" className="image-style" />
+      </div>
+
     </section>
   );
 };

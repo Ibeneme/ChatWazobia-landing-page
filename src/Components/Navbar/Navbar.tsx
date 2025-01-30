@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import VerifiedIcon from "../Icons/Verified";
 import BurgerIcon from "../Icons/BurgerIcon"; // Assume this is an SVG or icon component for the burger menu
@@ -11,6 +11,7 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ logoSrc, openModal }) => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage the dropdown menu visibility
 
   const getNavLinkClass = (path: string) => {
@@ -20,7 +21,7 @@ const Navbar: React.FC<NavbarProps> = ({ logoSrc, openModal }) => {
   return (
     <nav className="navbar">
       {/* Left Section: Logo */}
-      <div className="navbar-left">
+      <div className="navbar-left" onClick={() => navigate("/")}>
         <img src={logoSrc} alt="Logo" className="navbar-logo" />
         <span className="navbar-text">Chat WaZoBia AI</span>
       </div>

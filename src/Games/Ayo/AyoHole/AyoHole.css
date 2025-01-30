@@ -1,0 +1,58 @@
+.ayo-hole {
+    width: 80px;
+    height: 80px;
+    background-color: #f4d03f;
+    border: 2px solid #d35400;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    position: relative;
+}
+
+.ayo-hole:hover {
+    background-color: #f5b041;
+}
+
+.player-side {
+    background-color: #aed6f1;
+}
+
+.opponent-side {
+    background-color: #f9e79f;
+}
+
+.stones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.stone {
+    width: 12px; /* Slightly wider than the height */
+    height: 8px; /* Shorter to make it oval */
+    background: radial-gradient(ellipse at center, #2c2c2c 60%, #000 100%);
+    border-radius: 50%; /* Keeps the edges rounded for an oval shape */
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5), inset 0px -1px 2px rgba(255, 255, 255, 0.2);
+    transform: rotate(-70deg) translateY(-2px); /* Slants the stones by 70 degrees */
+    animation: bounce 1.5s infinite ease-in-out;
+  }
+  
+  /* Optional bounce effect for the seeds */
+  @keyframes bounce {
+    0%, 100% {
+      transform: rotate(-70deg) translateY(-2px); /* Maintain slant during bounce */
+    }
+    50% {
+      transform: rotate(-70deg) translateY(0);
+    }
+  }

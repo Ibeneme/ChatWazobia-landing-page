@@ -1,0 +1,89 @@
+/* General Styling */
+
+/* Game Container */
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 300px
+}
+
+/* Board */
+.board {
+    display: flex;
+    flex-direction: column;
+    background-color: #d4a373;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Rows */
+.player-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* .pit.active {
+    background-color: #4caf50; 
+}
+
+.pit.inactive {
+    background-color: #9e9e9e;
+}
+
+*/
+.pit.collecting {
+    background-color: #ff5722;
+    /* Color when pit is being collected */
+}
+
+.pit.player-a {
+    background-color: #795548;
+    /* Darker color for Player A pits */
+}
+
+.pit.player-b {
+    background-color: burlywood;
+    /* Lighter color for Player B pits */
+}
+
+/* Pits */
+.pit {
+    width: 80px;
+    height: 80px;
+    background-color: #795548;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.4),
+        inset 0px -4px 6px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.pit:hover {
+    transform: scale(1.05);
+}
+/* Mark exhausted pits with a red border */
+.pit.exhausted {
+    border: 2px solid red; /* Red border for exhausted pit */
+  }
+/* Stones (Seeds) */
+.stone {
+    width: 12px;
+    height: 18px;
+    background-color: #4e342e;
+    margin: 2px;
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.3),
+        2px -2px 4px rgba(255, 255, 255, 0.1);
+    transform: rotate(-70deg);
+    /* Slant the stones */
+}

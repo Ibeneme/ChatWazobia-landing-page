@@ -12,6 +12,7 @@ import TermsAndConditions from "./Pages/TermsAndConditions/TermsAndConditions";
 import WaitlistModal from "./Components/WaitlistModal/WaitlistModal";
 import { useState } from "react";
 import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy";
+import AyoGameIndex from "./Pages/AyoGame/AyoGameIndex";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -40,6 +41,17 @@ function App() {
             </>
           }
         />
+               <Route
+          path="/ayo"
+          element={
+            <>
+              {" "}
+              <Navbar logoSrc={logoSrc} openModal={openModal} /> <AyoGameIndex />
+              <Footer hideContactUs />
+            </>
+          }
+        />
+
         <Route
           path="/faqs"
           element={

@@ -4,10 +4,14 @@ import logo from "../../assets/Logo/Layer_x0020_1.png";
 import "./Footer.css";
 import ContactUs from "./ContactUs";
 
-const Footer = () => {
+interface FooterProps {
+  hideContactUs?: boolean;
+}
+
+const Footer: React.FC<FooterProps> = ({ hideContactUs }) => {
   return (
     <footer className="footer">
-      <ContactUs />
+      {!hideContactUs && <ContactUs />}
       <div className="footer-content">
         {/* Left Section */}
         <div className="footer-left">

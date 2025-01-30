@@ -8,11 +8,13 @@ import FifthSection from "./Section/FifthSection/FifthSection";
 import FAQPage from "../Faqs/FAQPage";
 import SixthSection from "./Section/SixSection/SixthSection";
 
-
 const Index = () => {
   return (
     <div style={{ padding: 0 }}>
+
       <Hero />
+      {/* <GameBoard /> */}
+      {/* <AyoBoard /> */}
       {/* <FirstSection />
       <SecondSection />
       <div style={{ padding: 0 }}>

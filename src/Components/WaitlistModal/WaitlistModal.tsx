@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./WaitlistModal.css";
 
-const WaitlistModal = ({ isOpen, onClose }: any) => {
+const WaitlistModal = ({ isOpen, onClose, demo }: any) => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
@@ -34,8 +34,7 @@ const WaitlistModal = ({ isOpen, onClose }: any) => {
       <div className="modal-content">
         {!showSuccess ? (
           <div>
-            <h2>Join Our Waitlist</h2>
-            <p>Enter your email to join the waitlist for exclusive updates.</p>
+       <h2>{demo ? 'This is a demo game. Our app is coming soon! Join our waitlist.' : 'Join our waitlist.'}</h2>   <p>Enter your email to join the waitlist for exclusive updates.</p>
 
             <input
               type="email"
