@@ -1,33 +1,16 @@
 import React, { useState, useEffect } from "react";
 import "./PuzzleGame.css"; // Import styles
+import { WORDS_POOL } from "./WordPool";
 
 // Define word pools for each language
 //const [language, setLanguage] = useState<'ENGLISH' | 'HAUSA' | 'IGBO' | 'YORUBA'>("ENGLISH");
 
-const WORDS_POOL = {
-  ENGLISH: [
-    "JAVASCRIPT", "TYPESCRIPT", "REACT", "NODEJS", "PYTHON", "MONGODB", "EXPRESS", "FRONTEND",
-    "BACKEND", "DATABASE", "COMPILER", "ALGORITHM", "CLOUD", "DEVOPS", "TESTING", "DEBUGGING",
-    "FUNCTION", "VARIABLE", "ASYNC", "AWAIT", "HOOKS", "RENDER", "COMPONENT", "CONTEXT",
-  ],
-  HAUSA: [
-    "GIDA", "LAFIYA", "KAI", "MUTUM", "YARA", "GASKIYA", "SAFARA", "HANKALI", "WASA", "KWALTA",
-    "HURUMI", "FAMA", "ZAFI", "DUBI", "SHIRYA", "LURA", "KOYI", "GAIDA", "BARKA", "SANARWA",
-  ],
-  IGBO: [
-    "MMADỤ", "ỤLỌ", "AHA", "NDỊ", "ỤWA", "ONWE", "AGỤ", "ỤFỤ", "ỌGỤ", "ỤZỌ", "MMỤTA", "ỊKE",
-    "NNỤ", "ỌMỤ", "DỊM", "NDỊỌMA", "ENYỊ", "OBI", "IKE", "ỌHỤ", "AGBỤ", "ỌCHỊ", "NGWU",
-  ],
-  YORUBA: [
-    "ILE", "ẸYẸ", "ỌKỌ", "ỌMỌ", "Ẹ̀DÁ", "ÌRÈ", "DÚRỌ", "AṢẸ", "ỌJỌ", "ÌSẸ́", "PẸ̀LÚ",
-    "FỌ́RỌ", "ỌFỌ́", "ỌRỌ", "IṢẸ", "ỌNÀ", "ỌLỌ́RUN", "MỌ", "Ẹ̀DÁ", "Ẹ̀KỌ", "ỌLÁ",
-  ],
-};
+
 
 const GRID_ROWS = 8;  // Reduced to 8 rows
 const GRID_COLS = 8;  // Reduced to 8 columns
 
-const getRandomWords = (level: number, language: 'ENGLISH' | 'HAUSA' | 'IGBO' | 'YORUBA') => {
+const getRandomWords = (level: number, language: 'ENGLISH' | 'HAUSA' | 'IGBO' | 'YORUBA' | 'BENIN' | 'TIV' | 'IGALA' | 'IKWERRE' | 'FULANI' | 'FRENCH' | 'SPANISH' | 'CHINESE' | 'ARABIC' | 'SWAHILI') => {
   const wordPool = WORDS_POOL[language];
   const wordsToPlace = Math.min(level * 5, wordPool.length); // Increase words per level
   const shuffled = [...wordPool].sort(() => Math.random() - 0.5);
@@ -86,7 +69,7 @@ const PuzzleGame: React.FC = () => {
   ]
 
   const [level, setLevel] = useState(1);
-  const [language, setLanguage] = useState<'ENGLISH' | 'HAUSA' | 'IGBO' | 'YORUBA'>("ENGLISH");
+  const [language, setLanguage] = useState<'ENGLISH' | 'HAUSA' | 'IGBO' | 'YORUBA' | 'BENIN' | 'TIV' | 'IGALA' | 'IKWERRE' | 'FULANI' | 'FRENCH' | 'SPANISH' | 'CHINESE' | 'ARABIC' | 'SWAHILI' >("ENGLISH");
   const [words, setWords] = useState<string[]>([]);
   const [gridData, setGridData] = useState<React.ReactNode[][]>(initialGridData);
   const [selectedLetters, setSelectedLetters] = useState<[number, number][]>([]);
@@ -169,7 +152,7 @@ const PuzzleGame: React.FC = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     // Assert that e.target.value is one of the valid values
-    setLanguage(e.target.value as "ENGLISH" | "HAUSA" | "IGBO" | "YORUBA");
+    setLanguage(e.target.value as 'ENGLISH' | 'HAUSA' | 'IGBO' | 'YORUBA' | 'BENIN' | 'TIV' | 'IGALA' | 'IKWERRE' | 'FULANI' | 'FRENCH' | 'SPANISH' | 'CHINESE' | 'ARABIC' | 'SWAHILI');
   };
 
 
@@ -192,10 +175,19 @@ const PuzzleGame: React.FC = () => {
         fontFamily: 'var(--fontFamily)',
       }}
     >
-      <option value="ENGLISH">English</option>
-      <option value="HAUSA">Hausa</option>
-      <option value="IGBO">Igbo</option>
-      <option value="YORUBA">Yoruba</option>
+<option value="ENGLISH">English</option>
+<option value="HAUSA">Hausa</option>
+<option value="IGBO">Igbo</option>
+<option value="YORUBA">Yoruba</option>
+<option value="BENIN">Benin</option>
+<option value="TIV">Tiv</option>
+<option value="IGALA">Igala</option>
+{/* <option value="ARABIC">Arabic</option> */}
+<option value="IKWERRE">Ikwerre</option>
+<option value="FULANI">Fulani</option>
+{/* <option value="CHINESE">Chinese</option> */}
+<option value="SWAHILI">Swahili</option>
+<option value="FRENCH">French</option>
     </select>
 
 
