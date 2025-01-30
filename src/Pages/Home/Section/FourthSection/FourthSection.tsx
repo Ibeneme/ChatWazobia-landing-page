@@ -21,7 +21,7 @@ const FourthSection = () => {
           {/* Left Side: Logo, Header, and Text */}
           <div className="fourth-section-text">
             <img src={logoImage} alt="Logo" className="logo-image" />
-            <h1>Puzzle Games and Eyo Game</h1>
+            <h1>Puzzle Games and Eyo Game with our AI models</h1>
             <p>
               The app offers interactive Puzzle Games to challenge your mind and
               enhance language skills through engaging tasks. Additionally,
@@ -33,6 +33,10 @@ const FourthSection = () => {
             <button className="join-btn" style={{ maxWidth: 370 }} onClick={() => navigate("/ayo")}>
               <PlayIcon />
       Play Ayo Game - Demo
+    </button>
+    <button className="join-btn" style={{ maxWidth: 370 }} onClick={() => navigate("/puzzle")}>
+              <PlayIcon />
+      Play Puzzle Game - Demo
     </button>
           </div>
 

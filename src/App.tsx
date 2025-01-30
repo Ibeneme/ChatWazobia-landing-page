@@ -13,6 +13,7 @@ import WaitlistModal from "./Components/WaitlistModal/WaitlistModal";
 import { useState } from "react";
 import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy";
 import AyoGameIndex from "./Pages/AyoGame/AyoGameIndex";
+import PuzzleGameIndex from "./Pages/PuzzleGameIndex/PuzzleGameIndex";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -51,6 +52,18 @@ function App() {
             </>
           }
         />
+
+<Route
+          path="/puzzle"
+          element={
+            <>
+              {" "}
+              <Navbar logoSrc={logoSrc} openModal={openModal} /> <PuzzleGameIndex />
+              <Footer hideContactUs />
+            </>
+          }
+        />
+
 
         <Route
           path="/faqs"

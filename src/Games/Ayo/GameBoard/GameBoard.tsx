@@ -146,7 +146,7 @@ const GameBoard: React.FC = () => {
              <WaitlistModal isOpen={isModalOpen} onClose={closeModal} />
 
       {/* Display Player Turn */}
-      <h1 className="player-turn-h1">Ayo Game</h1>
+      <h1 className="player-turn-h1">CW_AI Ayo Game</h1>
       <div className="player-turn">{currentPlayer}'s Turn</div>
 
       {/* Display Scores */}
