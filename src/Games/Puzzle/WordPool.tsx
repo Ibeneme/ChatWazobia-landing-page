@@ -83,7 +83,6 @@ export const WORDS_POOL = {
         "ỌGỤ", "ẸJẸ", "ẸDỌ", "ỌFẸ", "AKỌ", "NTA", "ỌHỌ", "ỌMỌỌ", "ỌRỌỤ", "ỌRỌMỌ", 
         "ỌLỌRẸ", "ỌGHỌ", "ỌGỌRỌ", "ẸKỌ", "ỌRU", "TỌRỌ", "ỊỌRỌ", "ỤGỌ", "ỌLỌMỌ", 
         "ỊKA", "IṢẸMỌ", "ỌHỌ", "ỌDỤMỌ", "ÀKỌ", "ỤBA", "ỌBỌRỌ", "ỌNỌ", "ẸJỌ",
-        // 100 more words added here...
       ],
       
       TIV: [

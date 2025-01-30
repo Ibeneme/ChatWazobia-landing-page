@@ -53,6 +53,7 @@ button {
   border-radius: 5px;
   font-family: var(--font-family);
   transition: background-color 0.3s ease;
+  /* font-size: 49px; */
 }
 
 button:hover {

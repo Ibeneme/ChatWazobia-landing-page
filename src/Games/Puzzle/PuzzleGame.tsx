@@ -218,7 +218,7 @@ const PuzzleGame: React.FC = () => {
           </div>
         ))}
       </div>
-      <button onClick={handleSubmitWord} style={{marginTop: 24, borderRadius: 2000}}>Submit Word</button>
+      <button onClick={handleSubmitWord} style={{marginTop: 24, borderRadius: 2000, fontSize: 17, fontWeight:'bold'}}>Submit Word</button>
 
 
       <div>
